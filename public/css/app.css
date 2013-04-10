@@ -1,0 +1,168 @@
+@font-face
+			{
+				font-family: "Roadgeek2005SeriesD";
+				src: url("http://panic.com/fonts/Roadgeek 2005 Series D/Roadgeek 2005 Series D.otf");
+			}
+			
+			body, *
+			{
+			
+			}
+			body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td
+			{ 
+				margin: 0;
+				padding: 0;
+			}
+				
+			fieldset,img
+			{ 
+				border: 0;
+			}
+			
+				
+			/* Settin' up the page */
+			
+			html, body, #main
+			{
+				overflow: hidden; /* */
+			}
+			
+			body
+			{
+				color: white;
+				font-family: 'Roadgeek2005SeriesD', sans-serif;
+				font-size: 20px;
+				line-height: 24px;
+			}
+			body, html, #main
+			{
+				background: transparent !important;
+			}
+			
+			#nestContainer
+			{
+				width: 250px;
+				height: 250px;
+				text-align: center;
+				background-size: 250px 187px;
+			}
+			#nestContainer *
+			{
+				font-weight: normal;
+			}
+			
+			.nests {
+				
+			}
+			.nest {
+				box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.25);
+					
+				border-radius: 10px;
+				margin: 10px 10px;
+				padding: 5px 10px;
+			}
+			.nest.heating {
+				background-color: rgb(255, 48, 0);
+			}
+			.nest.cooling {
+				background-color: rgb(0, 108, 230);
+			}
+			.nest.heating .name,
+			.nest.cooling .name {
+				color: white;
+			}
+
+			.nest .name {
+				text-align: left;
+				font-size: 18px;
+				line-height: 24px;
+				color: #7e7e7e;
+				text-transform: uppercase;
+			}
+
+			.nest .current_temperature {
+				color: white;
+				font-size: 48px;
+				float: left;
+				padding: 0px;
+				margin: 10px 0;
+				vertical-align: middle;
+			}
+			.nest .current_temperature:after,
+			.nest .target_temperature:after,
+			.nest .target_temperature_low:after,
+			.nest .target_temperature_high:after
+			{
+				content: "\00b0";
+				font-size: 1em;
+			}
+
+			.nest .target_temperatures {
+				float: right;
+			}
+
+			.nest .target_temperatures.range .target_temperature,
+			.nest .target_temperatures.heat .target_temperature_low,
+			.nest .target_temperatures.heat .target_temperature_high,
+			.nest .target_temperatures.cool .target_temperature_low,
+			.nest .target_temperatures.cool .target_temperature_high {
+				display: none;
+			}
+			.nest .target_temperatures.heat .target_temperature,
+			.nest .target_temperatures.range .target_temperature_low,
+			.nest .target_temperatures.range .target_temperature_high,
+			.nest .target_temperatures.cool .target_temperature {
+				display: block;
+			}		
+
+			.nest .target_temperatures.cool .target_temperature:before,
+			.nest .target_temperature_low:before,
+			.nest .target_temperatures.heat .target_temperature:before,
+			.nest .target_temperature_high:before {
+				content: '';
+				border-radius: 1000px;
+				width: 15px;
+				height: 15px;
+				display: inline-block;
+				margin-right: 5px;
+				box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.25);
+			}
+		
+			.nest .target_temperatures.cool .target_temperature:before,
+			.nest .target_temperature_low:before {
+				background-color: rgb(0, 108, 230);	
+			}
+
+			.nest .target_temperatures.heat .target_temperature:before,
+			.nest .target_temperature_high:before {
+				background-color: rgb(255, 48, 0);
+			}
+
+
+
+			.clear {
+				clear: both;
+			}
+
+
+			h1
+			{
+				font-size: 120px;
+				line-height: 120px;
+				margin-top: 15px;
+				margin-bottom: 28px;
+				color: white;
+				text-shadow:0px -2px 0px black;
+				text-transform: uppercase;
+			}
+			
+			h2
+			{
+				width: 180px;
+				margin: 0px auto;
+				padding-top: 10px;
+				font-size: 18px;
+				line-height: 24px;
+				color: #7e7e7e;
+				text-transform: uppercase;
+			}

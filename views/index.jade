@@ -1,0 +1,19 @@
+!!!
+html(ng-app="panicboardPanelNest")
+  head
+    meta(charset='utf8')
+    base(href='/')
+    title Panic 
+    link(rel='stylesheet', href='/css/app.css')
+  body
+    div#main
+        div#nestContainer
+            h2 Nest
+            div(ng-view)
+    
+script(src='js/lib/angular/angular.js')
+script(src='js/app.js')
+script(src='js/services.js')
+script(src='js/controllers.js')
+script(src='js/filters.js')
+script(src='js/directives.js')
