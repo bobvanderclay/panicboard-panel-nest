@@ -1,11 +1,10 @@
 # Panic Status Board panel for Nest thermostats
 
-Install dependencies.
-```
-npm install
-```
+[Blog Post](http://takitapart.com/posts/nest-on-the-panic-status-board/), with pictures.
 
-Start server.
+
+# Instructions
+
 ```
 node app.js "Nest username" "Nest password"
 ```
