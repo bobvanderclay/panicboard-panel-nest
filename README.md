@@ -2,7 +2,7 @@
 
 ![](http://takitapart.com/posts/nest-on-the-panic-status-board/nest-panel-detail.png)
 
-[About this plugin](http://takitapart.com/posts/nest-on-the-panic-status-board/).
+[About this panel](http://takitapart.com/posts/nest-on-the-panic-status-board/).
 
 
 
