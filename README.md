@@ -1,6 +1,10 @@
 # Panic Status Board panel for Nest thermostats
 
-[Blog Post](http://takitapart.com/posts/nest-on-the-panic-status-board/), with pictures.
+![](http://takitapart.com/posts/nest-on-the-panic-status-board/nest-panel-detail.png)
+
+[About this plugin](http://takitapart.com/posts/nest-on-the-panic-status-board/).
+
+
 
 
 # Instructions
