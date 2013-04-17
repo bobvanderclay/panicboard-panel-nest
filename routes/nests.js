@@ -8,7 +8,7 @@ var username = process.argv[2];
 var password = process.argv[3];
 var nestData;
 
-nest.login(username, password, function (data) {
+nest.login(username, password, function (nil, data) {
 	if (!data) {
         console.log('Nest Login failed.');
         process.exit(1);
