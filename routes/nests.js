@@ -1,4 +1,3 @@
-
 /*
  * GET nest listing.
  */
@@ -16,14 +15,14 @@ nest.login(username, password, function (nil, data) {
 	console.log('Nest Logged in.');
 });
 
-exports.status = function(req, res){
+exports.list = function(req, res){
 	
 	nest.fetchStatus(function (data) {
     	var devices = [];
 
         for (var deviceId in data.device) {
             if (data.device.hasOwnProperty(deviceId)) {
-                var device = data.shared[deviceId];
+                var device = data.device[deviceId];
                 devices.push(device);
             }
         }
@@ -31,4 +30,19 @@ exports.status = function(req, res){
         res.send(devices);
     });
 	
+};
+
+exports.find = function(req, res){
+    
+    nest.fetchStatus(function (data) {
+
+        if (data.device.hasOwnProperty(req.params.nest)) {
+            res.send(data.shared[req.params.nest]);
+        } else {
+            console.log('Cannot find device: ' + req.params.nest);
+            res.send({'error':'Cannot find device: ' + req.params.nest});
+        }
+
+    });
+    
 };

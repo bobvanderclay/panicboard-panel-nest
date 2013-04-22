@@ -1,5 +1,6 @@
-.nest(ng-repeat='nest in nests', ng-controller="NestController", ng-class="nest.runningState()")
+.nest(ng-repeat='nest in nests', ng-controller="NestController", ng-class="[nest.awayState(), nest.runningState()]")
     .name {{nest.name}}
+    .status
     .current_temperature {{nest.current_temperature|C2F}}
     .target_temperatures(ng-class="nest.target_temperature_type")
         .target_temperature {{nest.target_temperature|C2F}}

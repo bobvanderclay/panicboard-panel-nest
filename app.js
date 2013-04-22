@@ -5,6 +5,7 @@
 var express = require('express')
   , routes = require('./routes')
   , nests = require('./routes/nests')
+  , structures = require('./routes/structures')
   , http = require('http')
   , path = require('path');
 
@@ -28,8 +29,10 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/partials/:name', routes.partials);
-app.get('/api/nests', nests.status);
-
+app.get('/api/nests', nests.find);
+app.get('/api/nests/:nest', nests.find);
+app.get('/api/structures', structures.list);
+app.get('/api/structures/:structure', structures.show);
 
 
 http.createServer(app).listen(app.get('port'), function(){

@@ -39,26 +39,45 @@
 				background: transparent !important;
 			}
 			
-			#nestContainer
+			#panelContainer
 			{
-				width: 250px;
-				height: 250px;
 				text-align: center;
 				background-size: 250px 187px;
+				padding: 10px;
 			}
-			#nestContainer *
+			#panelContainer *
 			{
 				font-weight: normal;
 			}
 			
-			.nests {
+			.structures {}
+
+			.structure {}
+
+			.structure.away h2 {
+				float: left;
+			}
+			.structure > .status {
 				
 			}
+			.structure.away > .status:after {
+				content: 'AWAY';
+				float: right;
+				display: block;
+				border-radius: 5px;
+				background-color: rgb(174, 183, 188);
+				color: black;
+				padding: 0 0.25em;
+			}
+
+			.nests {
+				clear: both;
+			}
 			.nest {
+				clear: both;
 				box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
-					
 				border-radius: 10px;
-				margin: 10px 10px;
+				margin: 10px 0;
 				padding: 5px 10px;
 			}
 			.nest.heating {
@@ -72,19 +91,29 @@
 				color: white;
 			}
 
+
 			.nest .name {
 				text-align: left;
+				float: left;
 				font-size: 18px;
 				line-height: 24px;
 				color: #7e7e7e;
 				text-transform: uppercase;
 			}
 
+			.nest .status {
+				color: #7e7e7e;
+				font-size: 18px;
+				line-height: 24px;
+				float: right;
+				vertical-align: middle;
+			}
+
 			.nest .current_temperature {
+				clear: both;
 				color: white;
 				font-size: 48px;
 				float: left;
-				padding: 0px;
 				margin: 10px 0;
 				vertical-align: middle;
 			}
@@ -138,12 +167,9 @@
 				background-color: rgb(255, 48, 0);
 			}
 
-
-
 			.clear {
 				clear: both;
 			}
-
 
 			h1
 			{
@@ -158,9 +184,7 @@
 			
 			h2
 			{
-				width: 180px;
 				margin: 0px auto;
-				padding-top: 10px;
 				font-size: 18px;
 				line-height: 24px;
 				color: #7e7e7e;

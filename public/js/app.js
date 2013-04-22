@@ -5,8 +5,8 @@ angular.module('panicboardPanelNest', ['panicboardPanelNest.filters', 'panicboar
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'partials/nests',
-        controller: NestsController
+        templateUrl: 'partials/structures',
+        controller: StructuresController
       }).
       otherwise({
         redirectTo: '/'

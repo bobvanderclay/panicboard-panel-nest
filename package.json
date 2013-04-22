@@ -1,5 +1,5 @@
 {
-  "name": "Panic Status Board Panel for Nest",
+  "name": "panicboard-panel-nest",
   "version": "0.1.0",
   "private": true,
   "scripts": {
