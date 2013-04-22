@@ -1,5 +1,7 @@
 # Panic Status Board panel for Nest thermostats
 
+See the [History](https://github.com/takitapart/panicboard-panel-nest/blob/master/History.md) for updates.
+
 ![](http://takitapart.com/posts/nest-on-the-panic-status-board/nest-panel-detail.png)
 
 [About this panel](http://takitapart.com/posts/nest-on-the-panic-status-board/).
